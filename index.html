@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>New Project Of Portfolio</title>
+
+	<!-- FontAwesome CSS (only included once) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<!-- jQuery and Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  	<!-- Favicon -->
+	<link rel="icon" type="text/css" href="two.png">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=collapse_content" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	
+
+	<style>
+
+		html
+		{
+			scroll-behavior:smooth;
+		}
+
+		* 
+		{
+			box-sizing: border-box;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		body
+		{
+			background-color:lightgreen;
+		}
+
+		#txt_first
+		{
+			text-align:center;
+			color:black;
+			font-family:elephant;
+		}
+
+		#menu_box 
+		{
+			
+			background-color:#08896b;
+		}
+
+		#menu1
+		{
+			background-color:#075684;
+			width: auto;
+		}
+
+		#menu_box,#menu1
+		{
+			height:auto;
+		}
+
+		#menu1 a 
+		{
+			color: whitesmoke;
+			font-size: 18px;
+		}
+
+		#menu1 a:hover 
+		{
+			color: gray;
+		}
+
+		a.nav-link 
+		{
+			color: whitesmoke;
+			font-size: 20px;
+		}
+
+		a.nav-link:hover
+		{
+			color:gray;
+		}
+
+		#lt_icon 
+		{
+			color: whitesmoke;
+		}
+
+		.one
+		{
+			margin-top:30px;
+			font-family:arial;
+
+		}
+
+		#txt
+		{
+			font-family:arial;
+			text-align:center;
+		}
+
+		h2
+		{
+			color:purple;
+			text-align:center;
+			margin-top:30px;
+
+		}
+
+		.tb_box
+		{
+			height:auto;
+			display:flex;
+			justify-content:space-around;
+			align-items:center;
+			padding:30px;
+		}
+
+		#tb_col_box
+		{
+			height:auto;
+			background-color:lightseagreen;
+			margin-top:50px;
+			box-shadow:2px 5px 10px red;
+			border:2px black groove;
+			border-radius:20px;
+
+		}
+
+		.icon_g
+		{
+			font-size:100px;
+			margin-left:40px;
+		}
+
+		#icon_g
+		{
+			font-size:50px;
+			margin-top:20px;
+			margin-left:60px;
+		}
+
+		h6
+		{
+			text-align:center;
+			margin-top:20px;
+			font-size:16px;
+		}
+
+		.last_text
+		{
+			text-align:center;
+			color:whitesmoke;
+			font-size:14px;
+		}
+
+		.box_menu_one
+		{
+			height:50px;
+			width:120px;
+		}
+
+		#icon_f
+		{
+			color:whitesmoke;
+			font-size:20px;
+		}
+
+		#icon_f:hover
+		{
+			color:gray;
+		}
+
+		div#menu.dropdown-menu.col-sm.box-shadow
+		{
+			width:100px;
+		}
+
+		a.nav-link.dropdown-items
+		{
+			width:auto;
+		}
+
+		.arrow_icon,#icon_f,#slide_txt,#slide_text,#slide-icon_f
+		{
+			color:whitesmoke;
+		}
+
+		#list_box
+		{
+			width:140px;
+		}
+
+		#txt_first_1
+		{
+			text-align:center;
+			color:gray;
+			font-family:elephant;
+			font-size:50px;
+		}
+
+		.two
+		{
+			height:600px;
+			width:99%;
+			background-color:lightgreen;
+		}
+
+		#slide_box
+		{
+			 height:auto;
+		 	width:92%; 
+		 	border:solid gray 1px;
+		 	border-radius:20px; 
+		 
+		}
+
+		#mini_box
+		{
+			background-image:url(one.jpg);
+		}
+
+
+		#mini_box1
+		{
+			background-image:url(two.jpg);
+		}
+
+		#mini_box,#mini_box1,#mini_box2
+		{
+			background-color:whitesmoke;
+			background-size:cover;
+			height:140px;
+			width:140px;
+			border-radius:100px;
+		}
+
+		#mini_box2
+		{
+			background-image:url(2.jpg);	
+		}
+
+
+
+		#mini_box3
+		{
+			height:140px;
+			width:140px;
+			background-color:whitesmoke;
+			border-radius:100px;
+			background-image:url(3.jpg);
+			background-size:cover;
+			
+		}
+
+
+		#slide_txt
+		{
+			font-size:30px;
+			text-align:center;
+		}
+
+		#slide_text
+		{
+			text-align:center;
+			font-size:14px;
+		}
+
+		#slide-icon_f
+		{
+			font-size:30px;
+			text-align:center;
+			padding:10px;
+		}
+
+		#slide-icon_f:hover
+		{
+			color:gray;
+		}
+
+		#Client
+		{
+			text-align:center;
+			padding:0px;
+			margin:0px;
+			font-family:arial;
+			color:blue;
+		}
+
+		#img_1
+		{
+			height:140px;
+			width:140px;
+			border-radius:100px;
+
+		}
+
+		.slide_last_box
+		{
+			height:30px;
+			width:100%;
+
+		}
+
+		a:hovar
+		{
+			color:gray;
+		}
+		#menu_opt
+		{
+			width:120px;
+		}
+
+		.plan_bd_color
+		{
+			background-color:gray;
+			box-shadow:5px 5px 10px darkred;
+		}
+
+		.card-footer
+		{
+			background-color:#a0670c;
+		}
+
+		.ft_box1
+		{
+			background-color:#a09411;
+			border-radius:20px;
+		}
+
+		.ft_box2
+		{
+			background-color:#0ed339;
+			border-radius:20px;
+		}
+
+		.ft_box3
+		{
+			background-color:#0a6363;
+			border-radius:20px;
+		}
+
+		#cont-icon_f
+		{
+			color:black;
+			font-size:70px;
+		}
+
+		#cont-icon_f:hover
+		{
+			color:gray;
+		}
+
+		.last_cont_box
+		{
+			display:flex;
+			justify-content:space-around;
+			align-items:center;
+			background-image:url(five.jpg);
+			background-size:cover;
+		}
+
+		.fa-phone
+		{
+			font-size:17px;
+		}
+
+		.fa-phone:hover
+		{
+			color:whitesmoke;
+		}
+
+		a.nav-link.active
+		{
+			background-color:black;
+			color:whitesmoke;
+		}
+		#Client
+		{
+			background-color:lightgreen;
+		}
+	</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="200">
+	<h1 id="txt_first">Welcome To TCS</h1>
+
+
+
+
+<!--.................... Menu bar code here............................ -->
+
+	<nav class="navbar navbar-expand-md sticky-top" id="menu_box">
+		<a href="#" class="navbar-brand">
+			<img src="three.png" width="80px">
+		</a>
+
+		<span class="navbar-toggler arrow_icon" data-toggle="collapse" data-target="#menu">&#9776;</span>
+
+		<div class="collapse navbar-collapse " id="menu">
+			<ul class="nav">
+				<li class="nav-item dropdown col-md" id="list_box">
+					<a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown" id='menu_opt' 	>
+						Home
+					</a>
+
+					<div class="dropdown-menu col-md" id="menu1">
+						<a href="#" class="nav-link dropdown-items">Videos</a>
+						<a href="#" class="nav-link dropdown-items">Songs</a>
+						<a href="#" class="nav-link dropdown-items">Picture</a>
+						<a href="#" class="nav-link dropdown-items">Movies</a>
+						<a href="#" class="nav-link dropdown-items">Audios</a>
+					</div>
+				</li>
+				<li class="nav-item col-sm">
+					<a href="#picture" class="nav-link">Picture</a>
+				</li>
+				<li class="nav-item col-sm">
+					<a href="#Service" class="nav-link">Service</a>
+				</li>
+				<li class="nav-item col-sm">
+					<a href="#Client" class="nav-link">Review</a>
+				</li>
+				<li class="nav-item col-sm">
+					<a href="#plan" class="nav-link">Plans</a>
+				</li>
+				<li class="nav-item col-sm">
+					<a href="#content" class="nav-link">Contact</a>
+				</li>
+			</ul>
+
+
+		</div>
+
+		<div class="container ml-auto box_menu_one">
+
+			<a href="https://www.google.com/search?q=facebook&oq=facebook&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEwgBEC4YgwEYxwEYsQMY0QMYgAQyDQgCEAAYgwEYsQMYgAQyCggDEAAYsQMYgAQyBggEEAUYQDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI1NzVqMGo3qAIIsAIB8QWLEod6qwvU7_EFixKHeqsL1O8&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-facebook" id="icon_f"></i>
+			</a>
+			<a href="https://www.google.com/search?q=instagram&oq=ins&gs_lcrp=EgZjaHJvbWUqEggAEAAYQxiDARixAxiABBiKBTISCAAQABhDGIMBGLEDGIAEGIoFMhIIARAAGEMYgwEYsQMYgAQYigUyEggCEEUYORiDARixAxiABBiKBTINCAMQABiDARixAxiABDIPCAQQABhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTk1MWowajeoAgiwAgHxBY2uh33vpHed8QWNrod976R3nQ&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-square-instagram" id="icon_f"></i>
+			</a>
+			<a href="https://www.google.com/search?q=youtube&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQk0ODQxN2owajeoAgiwAgHxBY1HWwsyKVG_&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-youtube" id="icon_f"></i>
+			</a>
+
+		</div>
+	</nav>
+
+<!---------------------- End menu bar code here-------------------- -->
+
+
+
+
+<!----------------------Start code of Web information------------------->
+  <div class="container one " >
+  		<h1 id="txt_first_1">PCE Computer Services</h1>
+
+  		<p id="txt" class="animate__animated animate__backInDown" data-wow-duration="3s" data-wow-iteration="infinite">
+  			lorem ipsum dolor sit amet consectetur a adipivoluptas similique nihillorem ipsum dolor sit amet consectetur a adipivoluptas similique nihillorem ipsum dolor sit amet consectetur a adipivoluptas similique nihillorem ipsum dolor sit amet consectetur a adipivoluptas similique nihillorem ipsum dolor sit amet consectetur a adipivoluptas similique nihillorem ipsum dolor sit amet consectetur a adipivoluptas  
+  		</p>
+
+  		<img src="about2.svg" class="col-lg-12 wow animate__animated animate__heartBeat" width="900px" id="picture">
+
+  </div >
+
+  	<h2>Services</h2>
+  <div class="row tb_box" id="Service">
+  	<div class="col-md-3 animate__animated animate__bounceInLeft" id="tb_col_box">
+  		<div class="container">
+  			<i class="fa fa-fighter-jet" id="icon_g" aria-hidden="true"></i>
+  			<h6>Mobile App Development</h4>
+  				<p class="p-3 last_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Espedita explicabo ipsal</p>
+  		</div>
+  	</div>
+
+
+  	<div class="col-md-3 wow animate__animated animate__bounceInUp" id="tb_col_box">
+  		<div class="container">
+  			<i class="fa fa-television " id="icon_g" aria-hidden="true"></i>
+
+  			<h6>Web Development</h6>
+  			<p class="p-3 last_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Espedita explicabo ipsal</p>
+  		</div>
+  	</div>
+
+
+  	<div class="col-md-3 animate__animated animate__bounceInRight" id="tb_col_box">
+  		<div class="container ">
+  			<i class="fa fa-recycle" id="icon_g" aria-hidden="true"></i>
+  			<h6>Digital Marketing</h6>
+  			<p class="p-3 last_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Espedita explicabo ipsal</p>
+  		</div>
+  	</div>
+  </div>
+
+<!----------------------End code of Web information------------------->
+
+
+
+
+
+
+
+<!----------------------Start code of Client Review------------------->
+<div class=" wow	 animate__animated animate__fadeInRightBig" id="Client">
+	<h1 id="txt_first_1">Client Reviews</h1>
+	<div class=" carousel slide" data-ride="carousel" id="slide" >
+		 <ol class="carousel-indicators">
+    		<li data-target="#slide" data-slide-to="0" class="active"></li>
+    		<li data-target="#slide" data-slide-to="1"></li>
+    		<li data-target="#slide" data-slide-to="2"></li>
+    		<li data-target="#slide" data-slide-to="3"></li>
+    		
+  		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active container bg-dark" id="slide_box">
+				<div class="container" id="mini_box">
+				</div>
+				<p id="slide_txt">Shivam Kumar singh</p>
+				<p id="slide_text">
+				lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecati	
+				</p>
+		<center>
+			<a href="https://www.google.com/search?q=facebook&oq=facebook&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEwgBEC4YgwEYxwEYsQMY0QMYgAQyDQgCEAAYgwEYsQMYgAQyCggDEAAYsQMYgAQyBggEEAUYQDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI1NzVqMGo3qAIIsAIB8QWLEod6qwvU7_EFixKHeqsL1O8&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-facebook " id="slide-icon_f"></i>
+			</a>
+			<a href="https://www.google.com/search?q=instagram&oq=ins&gs_lcrp=EgZjaHJvbWUqEggAEAAYQxiDARixAxiABBiKBTISCAAQABhDGIMBGLEDGIAEGIoFMhIIARAAGEMYgwEYsQMYgAQYigUyEggCEEUYORiDARixAxiABBiKBTINCAMQABiDARixAxiABDIPCAQQABhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTk1MWowajeoAgiwAgHxBY2uh33vpHed8QWNrod976R3nQ&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-square-instagram " id="slide-icon_f"></i>
+			</a>
+			<a href="https://www.google.com/search?q=youtube&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQk0ODQxN2owajeoAgiwAgHxBY1HWwsyKVG_&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-youtube " id="slide-icon_f"></i>
+			</a>
+		</center>
+
+			<a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
+    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    
+  			</a>
+  			<a class="carousel-control-next" href="#slide" role="button" data-slide="next">
+    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+  			</a>
+
+  			<div class="container slide_last_box"></div>
+			</div>
+
+
+
+
+			<div class="carousel-item  container bg-dark" id="slide_box">
+				<div class="container" id="mini_box1">
+				</div>
+				<p id="slide_txt">Siddharth  singh</p>
+				<p id="slide_text">
+				lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecati	
+				</p>
+		<center>
+			<a href="https://www.google.com/search?q=facebook&oq=facebook&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEwgBEC4YgwEYxwEYsQMY0QMYgAQyDQgCEAAYgwEYsQMYgAQyCggDEAAYsQMYgAQyBggEEAUYQDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI1NzVqMGo3qAIIsAIB8QWLEod6qwvU7_EFixKHeqsL1O8&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-facebook " id="slide-icon_f"></i>
+			</a>
+			<a href="https://www.google.com/search?q=instagram&oq=ins&gs_lcrp=EgZjaHJvbWUqEggAEAAYQxiDARixAxiABBiKBTISCAAQABhDGIMBGLEDGIAEGIoFMhIIARAAGEMYgwEYsQMYgAQYigUyEggCEEUYORiDARixAxiABBiKBTINCAMQABiDARixAxiABDIPCAQQABhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTk1MWowajeoAgiwAgHxBY2uh33vpHed8QWNrod976R3nQ&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-square-instagram " id="slide-icon_f"></i>
+			</a>
+			<a href="https://www.google.com/search?q=youtube&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQk0ODQxN2owajeoAgiwAgHxBY1HWwsyKVG_&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-youtube " id="slide-icon_f"></i>
+			</a>
+		</center>
+
+			<a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
+    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    
+  			</a>
+  			<a class="carousel-control-next" href="#slide" role="button" data-slide="next">
+    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+  			</a>
+
+  			<div class="container slide_last_box"></div>
+			</div>
+
+			<div class="carousel-item  container bg-dark" id="slide_box">
+				<div class="container" id="mini_box2">
+				</div>
+				<p id="slide_txt">Nandani Kumari singh</p>
+				<p id="slide_text">
+				lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecati	
+				</p>
+		<center>
+			<a href="https://www.google.com/search?q=facebook&oq=facebook&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEwgBEC4YgwEYxwEYsQMY0QMYgAQyDQgCEAAYgwEYsQMYgAQyCggDEAAYsQMYgAQyBggEEAUYQDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI1NzVqMGo3qAIIsAIB8QWLEod6qwvU7_EFixKHeqsL1O8&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-facebook " id="slide-icon_f"></i>
+			</a>
+			<a href="https://www.google.com/search?q=instagram&oq=ins&gs_lcrp=EgZjaHJvbWUqEggAEAAYQxiDARixAxiABBiKBTISCAAQABhDGIMBGLEDGIAEGIoFMhIIARAAGEMYgwEYsQMYgAQYigUyEggCEEUYORiDARixAxiABBiKBTINCAMQABiDARixAxiABDIPCAQQABhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTk1MWowajeoAgiwAgHxBY2uh33vpHed8QWNrod976R3nQ&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-square-instagram " id="slide-icon_f"></i>
+			</a>
+			<a href="https://www.google.com/search?q=youtube&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQk0ODQxN2owajeoAgiwAgHxBY1HWwsyKVG_&sourceid=chrome&ie=UTF-8">
+				<i class="fa-brands fa-youtube " id="slide-icon_f"></i>
+			</a>
+		</center>
+
+			<a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
+    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    
+  			</a>
+  			<a class="carousel-control-next" href="#slide" role="button" data-slide="next">
+    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+  			</a>
+
+  			<div class="container slide_last_box"></div>
+			</div>
+
+
+			<div class="carousel-item  container bg-dark" id="slide_box">
+				<div class="container" id="mini_box3"></div>
+					<p id="slide_txt">Dipti</p>
+					<p id="slide_text">
+					lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecatilorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate id culpa eveniet obcaecati	
+					</p>
+		<center>
+					<a href="https://www.google.com/search?q=facebook&oq=facebook&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEwgBEC4YgwEYxwEYsQMY0QMYgAQyDQgCEAAYgwEYsQMYgAQyCggDEAAYsQMYgAQyBggEEAUYQDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI1NzVqMGo3qAIIsAIB8QWLEod6qwvU7_EFixKHeqsL1O8&sourceid=chrome&ie=UTF-8">
+					<i class="fa-brands fa-facebook " id="slide-icon_f"></i>
+					</a>
+					<a href="https://www.google.com/search?q=instagram&oq=ins&gs_lcrp=EgZjaHJvbWUqEggAEAAYQxiDARixAxiABBiKBTISCAAQABhDGIMBGLEDGIAEGIoFMhIIARAAGEMYgwEYsQMYgAQYigUyEggCEEUYORiDARixAxiABBiKBTINCAMQABiDARixAxiABDIPCAQQABhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTk1MWowajeoAgiwAgHxBY2uh33vpHed8QWNrod976R3nQ&sourceid=chrome&ie=UTF-8">
+					<i class="fa-brands fa-square-instagram " id="slide-icon_f"></i>
+					</a>
+					<a href="https://www.google.com/search?q=youtube&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQk0ODQxN2owajeoAgiwAgHxBY1HWwsyKVG_&sourceid=chrome&ie=UTF-8">
+					<i class="fa-brands fa-youtube " id="slide-icon_f"></i>
+					</a>
+		</center>
+
+					<a class="carousel-control-prev" href="#slide" role="button" data-slide="prev" >
+    				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    
+  					</a>
+  					<a class="carousel-control-next" href="#slide" role="button" data-slide="next">
+    				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+  					</a>
+
+  				<div class="container slide_last_box"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<!----------------------End code of Client Review------------------->
+
+
+
+
+
+<!--....................Start code of plans prices............... -->
+
+<h1 class="text-center mt-3 ">Web Plans</h1>
+
+<div class="container " id="plan">
+<div class="row">
+	<div class="col-md-4 mt-4 wow animate__animated animate__lightSpeedInLeft">
+		<div class="card text-center text-light plan_bd_color">
+		<div class="card-header bg-dark">
+			<h4>Basic Plan</h4>
+		</div>
+		<div class="card-body">
+			<h4>Starting Plan</h4><hr>
+			<p>$10/Month</p><hr>
+			<p>Free Website</p><hr>
+			<p>No Future Plan</p><hr>
+			<p>No Update Anything</p><hr>
+			<p>Pick Paid Plan</p>
+		</div>
+		<div class="card-footer">
+			<button class="btn bg-success text-light">Buy Now !</button>
+		</div>
+		</div>
+	</div>
+
+
+	<div class="col-md-4 mt-4 wow animate__animated animate__flipInX">
+		<div class="card text-center text-light plan_bd_color">
+		<div class="card-header bg-danger">
+			<h4>Advanced Plan</h4>
+		</div>
+		<div class="card-body">
+			<h4>Starting Plan</h4><hr>
+			<p>$100/Month</p><hr>
+			<p>Free Website</p><hr>
+			<p>No Future Plan</p><hr>
+			<p>No Update Anything</p><hr>
+			<p>Pick Paid Plan</p>
+		</div>
+		<div class="card-footer">
+			<button class="btn bg-success text-light">Buy Now !</button>
+		</div>
+		</div>
+	</div>
+
+	<div class="col-md-4 mt-4 wow animate__animated animate__lightSpeedInRight">
+		<div class="card text-center text-light plan_bd_color">
+		<div class="card-header bg-info">
+			<h4>Perpetual Plan</h4>
+		</div>
+		<div class="card-body">
+			<h4>Starting Plan</h4><hr>
+			<p>$1000/Month</p><hr>
+			<p>Free Website</p><hr>
+			<p>No Future Plan</p><hr>
+			<p>No Update Anything</p><hr>
+			<p>Pick Paid Plan</p>
+		</div>
+		<div class="card-footer">
+			<button class="btn bg-success text-light">Buy Now !</button>
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!--...........................End code of plans....................... -->
+
+
+
+
+<!--........................Start of code of Contact.................. -->
+
+<div class="container" id="content">
+	<h1 id="txt_first_1" class="mt-5">Contact</h1>
+	<div class="row">
+		<div class="col-md-4 border mt-5 ft_box1 wow animate__animated animate__slideInLeft">
+			<form>
+			<lebel for="username" >Enter Your Name</lebel>
+				<input type="text" name="username" class="bg-danger form-control mb-3">
+
+			<lebel for="username">Enter Your Password</lebel>
+			<input type="Password" name="Password" class="bg-dark form-control mb-3" >
+
+			<lebel for="username">Enter Your Email Id</lebel>
+				<input type="email" name="email" class=" bg-warning form-control mb-3 ">
+
+				<center><button class="btn bg-success text-light mt-2 mb-2">Send Me !</button></center>
+			</form>	
+		</div>
+
+
+		<div class="col-md-4 border  mt-5 text-center ft_box2 wow animate__animated animate__slideInUp">
+			<h2 class="mt-1 text-light">Name</h2>
+			<p>Shivam kumar singh</p>
+
+			<h2 class="mt-1 text-light">Contact No.</h2>
+			<p>8899776622<a href="https://www.google.com/search?q=phone+call+app&oq=phone+call+ap&gs_lcrp=EgZjaHJvbWUqCggAEAAYsQMYgAQyCggAEAAYsQMYgAQyBwgBEAAYgAQyBggCEEUYOTIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDI1MDNqMGo3qAIIsAIB8QW9biIOM5sMYw&sourceid=chrome&ie=UTF-8"></a><i class="fa fa-phone ml-2" aria-hidden="true"></i></p>
+
+			<h2 class="mt-1 text-light">Address</h2>
+			<p>Bhuli Ranguni Basti</p>
+
+			<h2 class="mt-1 text-light">LandMark</h2>
+			<p>Panchyat Bhawan</p>
+
+		</div>
+
+
+		<div class="col-md-4 ft_box3 mt-5 last_cont_box text-center
+		wow animate__animated animate__slideInRight">
+			<a href="https://www.google.com/search?q=facebook&oq=facebook&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyEwgBEC4YgwEYxwEYsQMY0QMYgAQyDQgCEAAYgwEYsQMYgAQyCggDEAAYsQMYgAQyBggEEAUYQDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI1NzVqMGo3qAIIsAIB8QWLEod6qwvU7_EFixKHeqsL1O8&sourceid=chrome&ie=UTF-8">
+			<i class="fa-brands fa-facebook " id="cont-icon_f"></i>
+			</a>
+					
+			<a href="https://www.google.com/search?q=instagram&oq=ins&gs_lcrp=EgZjaHJvbWUqEggAEAAYQxiDARixAxiABBiKBTISCAAQABhDGIMBGLEDGIAEGIoFMhIIARAAGEMYgwEYsQMYgAQYigUyEggCEEUYORiDARixAxiABBiKBTINCAMQABiDARixAxiABDIPCAQQABhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEIMTk1MWowajeoAgiwAgHxBY2uh33vpHed8QWNrod976R3nQ&sourceid=chrome&ie=UTF-8">
+			<i class="fa-brands fa-square-instagram " id="cont-icon_f"></i>
+			</a>
+					
+			<a href="https://www.google.com/search?q=youtube&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQk0ODQxN2owajeoAgiwAgHxBY1HWwsyKVG_&sourceid=chrome&ie=UTF-8">
+			<i class="fa-brands fa-youtube " id="cont-icon_f"></i>
+			</a>
+		</div>
+	</div>
+</div>
+
+<!--.........................End code of Contact....................... -->
+
+
+
+
+ <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    a</script>
+</body>
+</html>
